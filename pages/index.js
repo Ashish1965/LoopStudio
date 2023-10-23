@@ -65,9 +65,10 @@ export default function Home() {
 
         {/* <!-- Mobile Menu --> */}
         {open ? 
+          <div>
           <div
           id="menu"
-          className="absolute top-0 bottom-0 left-0 md:hidden flex flex-col self-end w-full min-h-min py-1 pt-40 pl-12 space-y-3 text-lg text-white uppercase bg-black"
+          className="absolute top-0 bottom-0 left-0 md:hidden flex flex-col self-end w-full min-h-min py-1 pb-10 pt-10 mt-24 pl-12 space-y-3 text-lg text-white uppercase bg-black"
         >
           <a href="#" className="hover:text-pink-500">About</a>
           <a href="#" className="hover:text-pink-500">Careers</a>
@@ -75,6 +76,7 @@ export default function Home() {
           <a href="#" className="hover:text-pink-500">Products</a>
           <a href="#" className="hover:text-pink-500">Support</a>
         </div>
+          </div>
         : 
         null
         }
